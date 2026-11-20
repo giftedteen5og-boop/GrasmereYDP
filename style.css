@@ -15,7 +15,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fff;
+    background-color: #faf8f5; /* Warm, earthy background instead of stark white */
 }
 
 img {
@@ -35,11 +35,11 @@ img {
 }
 
 .bg-light {
-    background-color: #f8f9fa;
+    background-color: #f0ece1; /* Earthy beige */
 }
 
 .bg-dark {
-    background-color: #1a1a1a;
+    background-color: #1a1d1a; /* Very dark forest green/gray */
     color: #fff;
 }
 
@@ -48,7 +48,7 @@ img {
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
-    color: #111;
+    color: #2d4a22; /* Deep forest green */
 }
 
 .bg-dark .section-title {
@@ -63,7 +63,7 @@ img {
 }
 
 .light-text {
-    color: #e0e0e0;
+    color: #d1d5db;
 }
 
 .center-text {
@@ -84,22 +84,22 @@ img {
 }
 
 .btn-primary {
-    background-color: #2e7d32; /* A strong, trustworthy green */
+    background-color: #2d4a22; /* Deep forest green */
     color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: #1b5e20;
+    background-color: #1e3316;
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: #2e7d32;
-    border-color: #2e7d32;
+    color: #2d4a22;
+    border-color: #2d4a22;
 }
 
 .btn-secondary:hover {
-    background-color: #2e7d32;
+    background-color: #2d4a22;
     color: #fff;
 }
 
@@ -110,7 +110,7 @@ img {
 
 .bg-dark .btn-secondary:hover {
     background-color: #fff;
-    color: #1a1a1a;
+    color: #1a1d1a;
 }
 
 .btn-large {
@@ -122,9 +122,9 @@ img {
    HEADER
    ========================================= */
 .site-header {
-    background-color: #fff;
+    background-color: #faf8f5;
     padding: 20px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e5e0d5;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -139,7 +139,7 @@ img {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #2d4a22;
     text-decoration: none;
 }
 
@@ -152,7 +152,7 @@ img {
 }
 
 .main-nav a:hover {
-    color: #2e7d32;
+    color: #2d4a22;
 }
 
 .main-nav .btn {
@@ -169,7 +169,7 @@ img {
    ========================================= */
 .hero {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background-color: #faf8f5;
 }
 
 .hero-container {
@@ -183,7 +183,7 @@ img {
     font-size: 3.5rem;
     line-height: 1.2;
     margin-bottom: 20px;
-    color: #111;
+    color: #2d4a22;
 }
 
 .subheadline {
@@ -195,6 +195,7 @@ img {
 .hero-buttons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap; /* Allows the new button to stack if screen is small */
 }
 
 .hero-image img {
@@ -221,7 +222,7 @@ img {
 
 .feature-list li::before, .benefits-list li::before {
     content: "✓";
-    color: #2e7d32;
+    color: #2d4a22;
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -240,14 +241,15 @@ img {
     padding: 40px 20px;
     border-radius: 16px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border: 1px solid #e5e0d5;
 }
 
 .stat-number {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2e7d32;
+    color: #2d4a22;
     margin-bottom: 10px;
 }
 
@@ -264,15 +266,16 @@ img {
 }
 
 .help-card {
-    background-color: #f8f9fa;
+    background-color: #fff;
     padding: 30px;
     border-radius: 16px;
-    border-left: 5px solid #2e7d32;
+    border-left: 5px solid #2d4a22;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
 }
 
 .help-card h3 {
     margin-bottom: 10px;
-    color: #111;
+    color: #2d4a22;
 }
 
 /* =========================================
@@ -288,35 +291,38 @@ img {
 
 .team-card {
     background-color: #fff;
-    padding: 30px;
+    padding: 40px 30px;
     border-radius: 16px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border: 1px solid #e5e0d5;
 }
 
 .team-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* Makes the image a perfect circle */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 15px auto;
-    border: 4px solid #e8f5e9; /* Soft green border */
+    border: 4px solid #f0ece1;
 }
 
 .team-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 5px;
-    color: #111;
+    color: #2d4a22;
 }
 
 .team-role {
-    color: #2e7d32; /* Green text for the job title */
+    color: #666;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .team-card p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #555;
 }
 
@@ -337,10 +343,9 @@ img {
     border-radius: 16px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; /* Shows a pointer finger so people know they can click */
+    cursor: pointer;
 }
 
-/* Make images zoom slightly when hovered over */
 .gallery-grid img:hover {
     transform: scale(1.03);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -350,20 +355,19 @@ img {
    LIGHTBOX (Click to expand gallery)
    ========================================= */
 .lightbox {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     z-index: 9999;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    background-color: rgba(10, 15, 10, 0.95); 
     justify-content: center;
     align-items: center;
     cursor: zoom-out;
 }
 
-/* The expanded image */
 .lightbox img {
     max-width: 90%;
     max-height: 90vh;
@@ -372,7 +376,6 @@ img {
     animation: zoomIn 0.3s ease;
 }
 
-/* The X close button */
 .close-btn {
     position: absolute;
     top: 20px;
@@ -385,10 +388,9 @@ img {
 }
 
 .close-btn:hover {
-    color: #2e7d32;
+    color: #2d4a22;
 }
 
-/* Zoom animation when opening */
 @keyframes zoomIn {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -398,12 +400,12 @@ img {
    PARTNERS SECTION
    ========================================= */
 .partners-placeholder {
-    background-color: #e8f5e9;
-    border: 2px dashed #2e7d32;
+    background-color: #f0ece1;
+    border: 2px dashed #2d4a22;
     border-radius: 16px;
     padding: 60px 30px;
     text-align: center;
-    color: #2e7d32;
+    color: #2d4a22;
     margin-top: 30px;
 }
 
@@ -411,8 +413,8 @@ img {
    FOOTER
    ========================================= */
 .site-footer {
-    background-color: #111;
-    color: #aaa;
+    background-color: #1a1d1a;
+    color: #a3a3a3;
     padding: 30px 0;
     text-align: center;
     font-size: 0.9rem;
@@ -421,59 +423,29 @@ img {
 /* =========================================
    ANIMATIONS (Continuous Side to Side)
    ========================================= */
-
-/* 1. Continuous Slide Left and Right */
 @keyframes continuousSlide {
-    0% {
-        transform: translateX(-15px);
-    }
-    50% {
-        transform: translateX(15px);
-    }
-    100% {
-        transform: translateX(-15px);
-    }
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
 }
 
-/* 2. Pop-in Animation for the Buttons (Only happens once) */
 @keyframes popIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    70% {
-        transform: scale(1.05);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+    0% { opacity: 0; transform: scale(0.9); }
+    70% { transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
 }
 
-/* Apply the continuous slide to the Title */
 .hero-content h1 {
-    animation: continuousSlide 3s ease-in-out infinite; 
+    animation: continuousSlide 4s ease-in-out infinite; 
 }
 
-/* Apply the continuous slide to the Subheadline (slightly offset for a natural look) */
 .hero-content .subheadline {
-    animation: continuousSlide 3s ease-in-out 0.5s infinite; 
+    animation: continuousSlide 4s ease-in-out 0.5s infinite; 
 }
 
-/* Keep the Buttons popping in once when the page loads */
 .hero-buttons {
     opacity: 0;
     animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.6s forwards; 
-}
-
-/* Button hover effect */
-.hero-buttons .btn {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.hero-buttons .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
 }
 
 /* =========================================
@@ -493,11 +465,14 @@ img {
     .stats-grid {
         grid-template-columns: 1fr;
     }
+    .team-grid {
+        grid-template-columns: 1fr !important; /* Forces the single team member to center on mobile */
+    }
 }
 
 @media (max-width: 768px) {
     .main-nav {
-        display: none; /* Simple mobile view; you can add a toggle menu later */
+        display: none; 
     }
     .hero-content h1 {
         font-size: 2.2rem;

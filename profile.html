@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grasmere Community Profile</title>
+    
+    <!-- Added Google Fonts so it matches your website -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #525659; /* Dark background for screen viewing */
+        }
+        .page {
+            width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            padding: 20mm;
+            box-sizing: border-box;
+            page-break-after: always;
+            background: white;
+            margin: 0 auto; /* Centers pages on screen */
+            position: relative;
+        }
+        
+        /* Cover Page Styles */
+        .cover {
+            background-color: #2d4a22 !important; /* Matches your website's theme */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* Print specific fixes for the cover */
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        .cover h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .cover h2 {
+            color: white; 
+            border: none; 
+            font-weight: normal;
+        }
+        .cover p {
+            font-size: 1.2em;
+            max-width: 80%;
+        }
+        
+        /* Content Page Styles */
+        h2 {
+            color: #2d4a22;
+            border-bottom: 2px solid #2d4a22;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight-box {
+            background-color: #faf8f5; /* Earthy background */
+            border-left: 5px solid #2d4a22;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .stat {
+            text-align: center;
+            background: #2d4a22;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        .stat h4 {
+            font-size: 2em;
+            margin: 0;
+            color: white;
+        }
+        .stat p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+        }
+        .contact-info {
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        
+        /* Print formatting - hides screen margins */
+        @media print {
+            body { 
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact; /* Fixed the warning here */
+                background-color: white;
+            }
+            .page { 
+                padding: 15mm; 
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- COVER PAGE -->
+    <div class="page cover">
+        <h1>Grasmere</h1>
+        <h2>Community Development Initiative</h2>
+        <p>Community Profile & Partnership Proposal</p>
+        <div style="margin-top: 60px;">
+            <p><strong>Prepared by:</strong> Gift Moopelwa (Founder & Coordinator)</p>
+            <p><strong>Contact:</strong> 069 211 8336 | giftmoopelwa5@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- PAGE 2: EXECUTIVE SUMMARY -->
+    <div class="page">
+        <h2 style="margin-top: 0;">1. Executive Summary</h2>
+        <p>Grasmere is a resilient community of approximately <strong>300,000 people</strong> located in Regions 07, 06, and 05 of the Johannesburg district, South Africa. Despite facing significant socio-economic challenges, our community possesses immense untapped potential.</p>
+        <p>This profile serves as an invitation to NGOs, youth development programs, and government departments to partner with us in bringing sustainable development to our area. We are organized, transparent, and ready to collaborate.</p>
+        
+        <div class="highlight-box">
+            <h3 style="margin-top: 0;">Our Mission</h3>
+            <p style="margin-bottom: 0;">To connect Grasmere with the resources, programs, and partnerships it needs to thrive, ensuring a brighter future for our youth and families.</p>
+        </div>
+    </div>
+
+    <!-- PAGE 3: THE NEED -->
+    <div class="page">
+        <h2 style="margin-top: 0;">2. Who We Are & The Need</h2>
+        <p>We are a community of hardworking families and talented young people with a strong sense of unity. However, for too long, Grasmere has been left out of development programs.</p>
+        <p>Currently, there are <strong>zero active NGOs or youth development programs</strong> operating in the area.</p>
+
+        <div class="stats-row">
+            <div class="stat">
+                <h4>300k</h4>
+                <p>Community Members</p>
+            </div>
+            <div class="stat">
+                <h4>6,000</h4>
+                <p>Youth without programs</p>
+            </div>
+            <div class="stat">
+                <h4>0</h4>
+                <p>Active NGOs</p>
+            </div>
+        </div>
+
+        <h3>The Impact:</h3>
+        <ul>
+            <li>Young people lack access to skills training, mentorship, and opportunities.</li>
+            <li>Basic services and infrastructure are severely limited.</li>
+            <li>Families struggle without the support systems that other communities receive.</li>
+        </ul>
+    </div>
+
+    <!-- PAGE 4: HOW PARTNERS CAN HELP -->
+    <div class="page">
+        <h2 style="margin-top: 0;">3. How Partners Can Help</h2>
+        <p>We invite organizations to partner with us in the following key areas:</p>
+        
+        <ul>
+            <li><strong>Youth Development:</strong> Implementing skills training, mentorship, sports, and educational programs.</li>
+            <li><strong>Community Infrastructure:</strong> Improving access to water, sanitation, roads, and community centers.</li>
+            <li><strong>Health & Social Services:</strong> Establishing clinics, awareness programs, and support for vulnerable groups.</li>
+            <li><strong>Economic Opportunities:</strong> Supporting small businesses, agriculture, and job training initiatives.</li>
+        </ul>
+
+        <h2 style="margin-top: 30px;">4. Why Partner With Us?</h2>
+        <ul>
+            <li><strong>We are Organized:</strong> We have a dedicated coordinator ready to liaise with your organization.</li>
+            <li><strong>We Document Everything:</strong> Your work will be publicly showcased on our website, highlighting your organization's impact.</li>
+            <li><strong>We are Transparent:</strong> We share progress openly with partners and the community.</li>
+            <li><strong>We are Committed:</strong> We are seeking long-term, lasting relationships, not one-time handouts.</li>
+            <li><strong>We are Eager:</strong> Residents are ready to participate and support incoming programs.</li>
+        </ul>
+    </div>
+
+    <!-- PAGE 5: CONTACT -->
+    <div class="page">
+        <h2 style="margin-top: 0;">5. Contact Us</h2>
+        <p>Be the change in Grasmere. Contact us today to discuss how we can work together to build a brighter future.</p>
+        
+        <div class="contact-info">
+            <h3>Gift Moopelwa</h3>
+            <p style="color: #666; text-transform: uppercase; font-weight: 600; font-size: 0.9em; letter-spacing: 1px;">Founder & Coordinator</p>
+            <p><strong>Phone/WhatsApp:</strong> 069 211 8336</p>
+            <p><strong>Email:</strong> giftmoopelwa5@gmail.com</p>
+            <p><strong>Location:</strong> Grasmere, Johannesburg, South Africa</p>
+        </div>
+    </div>
+
+</body>
+</html>
