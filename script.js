@@ -11,7 +11,7 @@ function openLightbox(imageSrc) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     
-    lightbox.style.display = 'flex'; // Shows the black background
+    lightbox.style.display = 'flex'; // Shows the dark background
     lightboxImg.src = imageSrc;      // Loads the clicked image
 }
 
